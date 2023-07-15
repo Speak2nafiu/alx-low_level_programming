@@ -1,8 +1,8 @@
-studio <.h>
+#include <stdio.h>
 
 main () 
 {
 	puts("Programming is like building a multilingual puzzle");
-	return (void);
+	return 0;
 }
 

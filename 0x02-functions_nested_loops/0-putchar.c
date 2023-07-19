@@ -11,10 +11,13 @@ int main(void)
 
 	char p[] = "_putchar";
 
-	for (i = 0; i < 9; i++)
+	for (i = 0; i < 8; i++)
 	{
 		putchar(p[i]);
 	}
+
+	putchar('\n');
+
 	return (0);
 
 

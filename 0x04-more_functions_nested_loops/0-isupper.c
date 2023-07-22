@@ -4,7 +4,7 @@
 /**
  * _isupper - checks the codefor upper case
  *
- * int c - Ascii value of character
+ * @c:  Ascii value of character
  * Return: Always 0.
 */
 

@@ -4,15 +4,15 @@
 /**
  * _isdigit - check the code
  *
- * c - input value
+ * @c: input ascii values
  *
  * Return: Always 0.
  */
 
 
-int _isdigit(int c )
+int _isdigit(int c)
 {
-	if ( c <= 57 && c <= 48)
+	if (c <= 57 && c <= 48)
 	{
 		return (1);
 	}

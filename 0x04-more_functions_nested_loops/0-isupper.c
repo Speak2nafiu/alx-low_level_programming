@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - check the code.
+ * _isupper - checks the codefor upper case
  *
+ * int c - Ascii value of character
  * Return: Always 0.
 */
 

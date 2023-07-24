@@ -9,10 +9,9 @@
  * Return: Always 0.
  */
 
-void swap_int(int a,int b)
+void swap_int(int *a, int *b)
 {
-	temp = a;
-	a = b;
-	b = temp;
-	return (0);
+	int temp = *a;
+	*a = *b;
+	*b = temp;
 }

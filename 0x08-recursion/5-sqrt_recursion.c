@@ -1,26 +1,26 @@
+#include <math.h>
 #include <stdio.h>
 #include "main.h"
-#include <math.h>
 
 /**
- *_sqrt_recursion - prints only perfect square root
+ *_sqrt_recursion - prints perfect square
+ *@n: number 
  *
- *@n: number to square root
- *Return: always 0.
  */
-
 int _sqrt_recursion(int n)
 {
-	int i = 1;
+	int y = sqrt (n);
+	int z;
 
-	while (i * i < n )
+	if (y * y == n)
 	{
-		++i;
+	 	z = y;	 
 	}
 
-	if (i * i > n)
+	else 
 	{
-		return (-1);
+		z = -1;
 	}
-	return (i);
+
+	return (z);
 }

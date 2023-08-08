@@ -10,6 +10,26 @@
  *
  * Return: Always 0.
  */
+char *_strdup(char *str)
+{
+	int len;
+	char *dup;
+	
 
+	len = strlen(str) + 1;
+
+	if (str == 0)
+		{
+			return (0);
+		}
+
+	dup = (char *)malloc(len);
+
+	if (dup != NULL)
+	{
+			strcpy( dup, str);
+	}
+
+	return (dup);
 
 }

@@ -4,8 +4,9 @@
 #include <string.h>
 
 /**
- * main - check the code for ALX School students.
- *
+ * str_concat - concatenate two strings
+ * @s1: string one
+ * @s2 : string 2
  * Return: Always 0.
  */
 
@@ -30,12 +31,12 @@ char *str_concat(char *s1, char *s2)
 
 
 	conc = (char *)malloc(len1 + len2 + 1);
-	
+
 	if (conc != NULL)
 	{
 
-		strcpy(conc , s1);
-		strcat(conc , s2);
+		strcpy(conc, s1);
+		strcat(conc, s2);
 	}
 
 	return (conc);

@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * print_grid - prints a grid of integers
+ * free_grid -frees memory of a grid of integers
  * @grid: the address of the two dimensional grid
  *
  * @height: height of the grid
@@ -13,12 +13,12 @@
 void free_grid(int **grid, int height)
 {
 	int i;
-	
+
 	if (height <= 0)
 	{
 		free(grid);
 	}
-	
+
 	i = 0;
 	while (i < height)
 	{

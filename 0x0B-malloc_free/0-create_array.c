@@ -22,9 +22,10 @@ char *create_array(unsigned int size, char c)
 
 	p = malloc(size * sizeof(int));
 
-	while (i > size)
+	while (i < size)
 	{
 		p[i] = c;
+		++i;
 	}
 
 	return (p);

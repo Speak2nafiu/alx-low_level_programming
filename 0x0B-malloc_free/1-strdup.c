@@ -30,6 +30,11 @@ char *_strdup(char *str)
 		strcpy(dup, str);
 	}
 
+	else
+	{
+		return (NULL);
+	}
+
 	return (dup);
 
 }

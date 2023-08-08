@@ -14,20 +14,20 @@ char *_strdup(char *str)
 {
 	int len;
 	char *dup;
-	
+
 
 	len = strlen(str) + 1;
 
-	if (str == 0)
-		{
-			return (0);
-		}
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 
 	dup = (char *)malloc(len);
 
 	if (dup != NULL)
 	{
-			strcpy( dup, str);
+		strcpy(dup, str);
 	}
 
 	return (dup);

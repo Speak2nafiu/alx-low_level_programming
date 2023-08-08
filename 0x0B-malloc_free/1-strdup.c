@@ -15,13 +15,13 @@ char *_strdup(char *str)
 	int len;
 	char *dup;
 
-
-	len = strlen(str) + 1;
-
 	if (str == NULL)
 	{
-		return (NULL);
+		return (0);
 	}
+
+
+	len = strlen(str) + 1;
 
 	dup = (char *)malloc(len);
 
@@ -30,10 +30,6 @@ char *_strdup(char *str)
 		strcpy(dup, str);
 	}
 
-	else
-	{
-		return (NULL);
-	}
 
 	return (dup);
 

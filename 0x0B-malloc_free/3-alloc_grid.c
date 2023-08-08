@@ -3,18 +3,13 @@
 #include <stdlib.h>
 /**
  * alloc_grid - prints a grid of integers
- *
  * @width: width of the grid
  * @height: height of the grid
- *
  * Return: Nothing.
  */
-
 int **alloc_grid(int width, int height)
 {
-	int i;
-	int j;
-	int **grid;
+	int i;	int j;	int **grid;
 
 	if (width <= 0 || height <= 0)
 	{
@@ -35,6 +30,10 @@ int **alloc_grid(int width, int height)
 			}
 			++i;
 		}
+	}
+	else
+	{
+		free(grid);
 	}
 	return (grid);
 }

@@ -1,5 +1,5 @@
-#ifndef Main_h
-#define MAin_h
+#ifndef PI_h
+#define PI_h
 
 
 #define "PI  3.14159265359"

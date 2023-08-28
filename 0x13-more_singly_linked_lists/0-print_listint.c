@@ -3,7 +3,7 @@
 #include "lists.h"
 /**
  *print_listint- print elements in a list
- *@listint_t: struct defined in list.h
+ *
  *@h : pointer
  *
  * Return: count

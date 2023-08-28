@@ -5,7 +5,7 @@
  * at a given position
  * @head: Is the pointer to the first node in the list
  * @idx: It index where the new node is added
- * @p: is the data to insert in the new node
+ * @n: is the data to insert in the new node
  *
  * Return:is the pointer to the new node, or NULL
  */
@@ -40,7 +40,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		else
 			temp = temp->next;
 	}
-         free (new);
+	free(new);
 	return (NULL);
 }
 
